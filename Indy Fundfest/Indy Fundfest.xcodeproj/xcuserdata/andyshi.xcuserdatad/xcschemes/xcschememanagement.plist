@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Indy Fund Fest.xcscheme</key>
+		<key>Indy Fundfest.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>8C205E7E1B3B65E0002CA95F</key>
+		<key>8CFAB1881B44C6B8009C0EF2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8C205E921B3B65E0002CA95F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8C205E9D1B3B65E0002CA95F</key>
+		<key>8CFAB19F1B44C6B8009C0EF2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

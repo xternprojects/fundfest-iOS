@@ -1,14 +1,14 @@
 //
-//  ViewController.swift
-//  Indy Fund Fest
+//  FirstViewController.swift
+//  Indy Fundfest
 //
-//  Created by Andy Shi on 6/24/15.
-//  Copyright © 2015 Indy Fund Fest. All rights reserved.
+//  Created by Andy Shi on 7/1/15.
+//  Copyright (c) 2015 Indy Fundfest. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

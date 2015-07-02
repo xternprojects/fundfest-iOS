@@ -14,10 +14,24 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8C205E7E1B3B65E0002CA95F"
-               BuildableName = "Indy Fund Fest.app"
-               BlueprintName = "Indy Fund Fest"
-               ReferencedContainer = "container:Indy Fund Fest.xcodeproj">
+               BlueprintIdentifier = "8CFAB1881B44C6B8009C0EF2"
+               BuildableName = "Indy Fundfest.app"
+               BlueprintName = "Indy Fundfest"
+               ReferencedContainer = "container:Indy Fundfest.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8CFAB19F1B44C6B8009C0EF2"
+               BuildableName = "Indy FundfestTests.xctest"
+               BlueprintName = "Indy FundfestTests"
+               ReferencedContainer = "container:Indy Fundfest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8C205E921B3B65E0002CA95F"
-               BuildableName = "Indy Fund FestTests.xctest"
-               BlueprintName = "Indy Fund FestTests"
-               ReferencedContainer = "container:Indy Fund Fest.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8C205E9D1B3B65E0002CA95F"
-               BuildableName = "Indy Fund FestUITests.xctest"
-               BlueprintName = "Indy Fund FestUITests"
-               ReferencedContainer = "container:Indy Fund Fest.xcodeproj">
+               BlueprintIdentifier = "8CFAB19F1B44C6B8009C0EF2"
+               BuildableName = "Indy FundfestTests.xctest"
+               BlueprintName = "Indy FundfestTests"
+               ReferencedContainer = "container:Indy Fundfest.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8C205E7E1B3B65E0002CA95F"
-            BuildableName = "Indy Fund Fest.app"
-            BlueprintName = "Indy Fund Fest"
-            ReferencedContainer = "container:Indy Fund Fest.xcodeproj">
+            BlueprintIdentifier = "8CFAB1881B44C6B8009C0EF2"
+            BuildableName = "Indy Fundfest.app"
+            BlueprintName = "Indy Fundfest"
+            ReferencedContainer = "container:Indy Fundfest.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +79,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8C205E7E1B3B65E0002CA95F"
-            BuildableName = "Indy Fund Fest.app"
-            BlueprintName = "Indy Fund Fest"
-            ReferencedContainer = "container:Indy Fund Fest.xcodeproj">
+            BlueprintIdentifier = "8CFAB1881B44C6B8009C0EF2"
+            BuildableName = "Indy Fundfest.app"
+            BlueprintName = "Indy Fundfest"
+            ReferencedContainer = "container:Indy Fundfest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +98,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8C205E7E1B3B65E0002CA95F"
-            BuildableName = "Indy Fund Fest.app"
-            BlueprintName = "Indy Fund Fest"
-            ReferencedContainer = "container:Indy Fund Fest.xcodeproj">
+            BlueprintIdentifier = "8CFAB1881B44C6B8009C0EF2"
+            BuildableName = "Indy Fundfest.app"
+            BlueprintName = "Indy Fundfest"
+            ReferencedContainer = "container:Indy Fundfest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

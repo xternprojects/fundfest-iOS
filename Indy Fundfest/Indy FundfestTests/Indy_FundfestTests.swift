@@ -1,14 +1,15 @@
 //
-//  Indy_Fund_FestTests.swift
-//  Indy Fund FestTests
+//  Indy_FundfestTests.swift
+//  Indy FundfestTests
 //
-//  Created by Andy Shi on 6/24/15.
-//  Copyright © 2015 Indy Fund Fest. All rights reserved.
+//  Created by Andy Shi on 7/1/15.
+//  Copyright (c) 2015 Indy Fundfest. All rights reserved.
 //
 
+import UIKit
 import XCTest
 
-class Indy_Fund_FestTests: XCTestCase {
+class Indy_FundfestTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -22,7 +23,7 @@ class Indy_Fund_FestTests: XCTestCase {
     
     func testExample() {
         // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        XCTAssert(true, "Pass")
     }
     
     func testPerformanceExample() {
