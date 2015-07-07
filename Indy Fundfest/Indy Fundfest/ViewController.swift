@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  ViewController.swift
 //  Indy Fundfest
 //
 //  Created by Andy Shi on 7/1/15.
@@ -8,10 +8,12 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class ViewController: UIViewController {
+    @IBOutlet var scroller: UIScrollView!
 
-    override func viewDidLoad() {
+    override func viewDidLoad() {        
         super.viewDidLoad()
+        scroller.contentSize.height = 1000
         // Do any additional setup after loading the view, typically from a nib.
     }
 
