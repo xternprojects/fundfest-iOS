@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>922B1C45-4F7E-47C8-89DA-1F38BF4C4613</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Indy Fundfest</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>C9B85C11B8A66FB7EB4FF7D1FA09FED806B9D349</key>
 		<string>https://github.com/xternprojects/fundfest-iOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Indy Fundfest/Indy Fundfest.xcodeproj/project.xcworkspace</string>
+	<string>Indy Fundfest/Indy Fundfest.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>C9B85C11B8A66FB7EB4FF7D1FA09FED806B9D349</key>

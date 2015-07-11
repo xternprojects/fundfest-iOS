@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8CED5DA71B50AFE700D8E329 /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CED5DA61B50AFE700D8E329 /* ENSideMenu.swift */; };
+		8CED5DA91B50AFF300D8E329 /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CED5DA81B50AFF300D8E329 /* ENSideMenuNavigationController.swift */; };
+		8CED5DAB1B50B03300D8E329 /* SliderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CED5DAA1B50B03300D8E329 /* SliderVC.swift */; };
+		8CED5DAE1B50B0DB00D8E329 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CED5DAC1B50B0DB00D8E329 /* MyNavigationController.swift */; };
+		8CED5DAF1B50B0DB00D8E329 /* MyMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CED5DAD1B50B0DB00D8E329 /* MyMenuTableViewController.swift */; };
 		8CFAB18F1B44C6B8009C0EF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFAB18E1B44C6B8009C0EF2 /* AppDelegate.swift */; };
 		8CFAB1911B44C6B8009C0EF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFAB1901B44C6B8009C0EF2 /* ViewController.swift */; };
 		8CFAB1961B44C6B8009C0EF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CFAB1941B44C6B8009C0EF2 /* Main.storyboard */; };
@@ -26,6 +31,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8CED5DA61B50AFE700D8E329 /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenu.swift; sourceTree = "<group>"; };
+		8CED5DA81B50AFF300D8E329 /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
+		8CED5DAA1B50B03300D8E329 /* SliderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderVC.swift; sourceTree = "<group>"; };
+		8CED5DAC1B50B0DB00D8E329 /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
+		8CED5DAD1B50B0DB00D8E329 /* MyMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMenuTableViewController.swift; sourceTree = "<group>"; };
 		8CFAB1891B44C6B8009C0EF2 /* Indy Fundfest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Indy Fundfest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CFAB18D1B44C6B8009C0EF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CFAB18E1B44C6B8009C0EF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +66,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8CED5DB01B50B10A00D8E329 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				8CED5DA61B50AFE700D8E329 /* ENSideMenu.swift */,
+				8CED5DA81B50AFF300D8E329 /* ENSideMenuNavigationController.swift */,
+				8CED5DAC1B50B0DB00D8E329 /* MyNavigationController.swift */,
+				8CED5DAD1B50B0DB00D8E329 /* MyMenuTableViewController.swift */,
+				8CED5DAA1B50B03300D8E329 /* SliderVC.swift */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
 		8CFAB1801B44C6B8009C0EF2 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +99,7 @@
 		8CFAB18B1B44C6B8009C0EF2 /* Indy Fundfest */ = {
 			isa = PBXGroup;
 			children = (
+				8CED5DB01B50B10A00D8E329 /* Library */,
 				8CFAB18E1B44C6B8009C0EF2 /* AppDelegate.swift */,
 				8CFAB1901B44C6B8009C0EF2 /* ViewController.swift */,
 				8CFAB1941B44C6B8009C0EF2 /* Main.storyboard */,
@@ -162,6 +185,7 @@
 				TargetAttributes = {
 					8CFAB1881B44C6B8009C0EF2 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = X9EUWHA27S;
 					};
 					8CFAB19F1B44C6B8009C0EF2 = {
 						CreatedOnToolsVersion = 6.4;
@@ -213,6 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CED5DAB1B50B03300D8E329 /* SliderVC.swift in Sources */,
+				8CED5DA91B50AFF300D8E329 /* ENSideMenuNavigationController.swift in Sources */,
+				8CED5DA71B50AFE700D8E329 /* ENSideMenu.swift in Sources */,
+				8CED5DAE1B50B0DB00D8E329 /* MyNavigationController.swift in Sources */,
+				8CED5DAF1B50B0DB00D8E329 /* MyMenuTableViewController.swift in Sources */,
 				8CFAB18F1B44C6B8009C0EF2 /* AppDelegate.swift in Sources */,
 				8CFAB1911B44C6B8009C0EF2 /* ViewController.swift in Sources */,
 			);
