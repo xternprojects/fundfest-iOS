@@ -11,7 +11,6 @@
 		8C01FD511B52F02600D137F3 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C01FD501B52F02600D137F3 /* CategoryViewController.swift */; };
 		8CED5DA71B50AFE700D8E329 /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CED5DA61B50AFE700D8E329 /* ENSideMenu.swift */; };
 		8CED5DA91B50AFF300D8E329 /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CED5DA81B50AFF300D8E329 /* ENSideMenuNavigationController.swift */; };
-		8CED5DAB1B50B03300D8E329 /* SliderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CED5DAA1B50B03300D8E329 /* SliderVC.swift */; };
 		8CED5DAE1B50B0DB00D8E329 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CED5DAC1B50B0DB00D8E329 /* MyNavigationController.swift */; };
 		8CED5DAF1B50B0DB00D8E329 /* MyMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CED5DAD1B50B0DB00D8E329 /* MyMenuTableViewController.swift */; };
 		8CFAB18F1B44C6B8009C0EF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFAB18E1B44C6B8009C0EF2 /* AppDelegate.swift */; };
@@ -37,7 +36,6 @@
 		8C01FD501B52F02600D137F3 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		8CED5DA61B50AFE700D8E329 /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenu.swift; sourceTree = "<group>"; };
 		8CED5DA81B50AFF300D8E329 /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
-		8CED5DAA1B50B03300D8E329 /* SliderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderVC.swift; sourceTree = "<group>"; };
 		8CED5DAC1B50B0DB00D8E329 /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
 		8CED5DAD1B50B0DB00D8E329 /* MyMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMenuTableViewController.swift; sourceTree = "<group>"; };
 		8CFAB1891B44C6B8009C0EF2 /* Indy Fundfest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Indy Fundfest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,7 +75,6 @@
 				8CED5DA81B50AFF300D8E329 /* ENSideMenuNavigationController.swift */,
 				8CED5DAC1B50B0DB00D8E329 /* MyNavigationController.swift */,
 				8CED5DAD1B50B0DB00D8E329 /* MyMenuTableViewController.swift */,
-				8CED5DAA1B50B03300D8E329 /* SliderVC.swift */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -244,7 +241,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C01FD511B52F02600D137F3 /* CategoryViewController.swift in Sources */,
-				8CED5DAB1B50B03300D8E329 /* SliderVC.swift in Sources */,
 				8CED5DA91B50AFF300D8E329 /* ENSideMenuNavigationController.swift in Sources */,
 				8CED5DA71B50AFE700D8E329 /* ENSideMenu.swift in Sources */,
 				8CED5DAE1B50B0DB00D8E329 /* MyNavigationController.swift in Sources */,
@@ -387,6 +383,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.IndyFundFest.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -400,6 +397,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.IndyFundFest.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

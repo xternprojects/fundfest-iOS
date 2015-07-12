@@ -11,9 +11,11 @@ import UIKit
 class  ProjectViewController: UIViewController {
     
     @IBOutlet var resultData: UILabel!
+    var segueData = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        resultData.text = segueData
         // Do any additional setup after loading the view.
     }
     
