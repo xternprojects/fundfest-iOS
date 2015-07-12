@@ -86,7 +86,7 @@ public extension UIViewController {
         if (iteration == nil) {
             return topMostController()
         }
-        repeat {
+        do {
             if (iteration is ENSideMenuProtocol) {
                 return iteration as? ENSideMenuProtocol
             } else if (iteration?.parentViewController != nil && iteration?.parentViewController != iteration) {

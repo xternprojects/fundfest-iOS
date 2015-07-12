@@ -22,7 +22,7 @@ class CategoryViewController: UIViewController {
         
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!) { (data, response, error) in NSString(data: data!, encoding: NSUTF8StringEncoding)
             if error != "nil" {
-                self.jsonData = String(NSString(data: data!, encoding: NSUTF8StringEncoding))
+                self.jsonData = String(NSString(data: data!, encoding: NSUTF8StringEncoding)!)
                 print(self.jsonData)
             }
             else
@@ -31,7 +31,7 @@ class CategoryViewController: UIViewController {
             }
             
         }
-        task!.resume()
+        task.resume()
     }
 
     override func didReceiveMemoryWarning() {

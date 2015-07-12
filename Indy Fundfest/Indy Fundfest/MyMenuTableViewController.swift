@@ -43,8 +43,7 @@ class MyMenuTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        var cell = tableView.dequeueReusableCellWithIdentifier("CELL")
+        var cell = tableView.dequeueReusableCellWithIdentifier("CELL") as? UITableViewCell
         
         if (cell == nil) {
             cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "CELL")
@@ -59,19 +58,19 @@ class MyMenuTableViewController: UITableViewController {
         
         switch (indexPath.row) {
         case 0:
-            cell!.textLabel?.text = "Fund Fest"
+            cell!.textLabel!.text = "Fund Fest"
             break
         case 1:
-            cell!.textLabel?.text = "Schedule"
+            cell!.textLabel!.text = "Schedule"
             break
         case 2:
-            cell!.textLabel?.text = "Map"
+            cell!.textLabel!.text = "Map"
             break
         case 3:
-            cell!.textLabel?.text = "Projects"
+            cell!.textLabel!.text = "Projects"
             break
         default:
-            cell!.textLabel?.text = "Profile"
+            cell!.textLabel!.text = "Profile"
             break
         }
 
@@ -100,19 +99,19 @@ class MyMenuTableViewController: UITableViewController {
         var destViewController : AnyObject
         switch (indexPath.row) {
         case 0:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("fundfestVC") as UIViewController
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("fundfestVC") as! UIViewController
             break
         case 1:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("scheduleVC") as UIViewController
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("scheduleVC") as! UIViewController
             break
         case 2:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("mapVC") as UIViewController
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("mapVC") as! UIViewController
             break
         case 3:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("projectsVC") as UIViewController
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("projectsVC") as! UIViewController
             break
         default:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("profileVC") as UIViewController
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("profileVC") as! UIViewController
             break
         }
         sideMenuController()?.setContentViewController(destViewController as! UIViewController)
