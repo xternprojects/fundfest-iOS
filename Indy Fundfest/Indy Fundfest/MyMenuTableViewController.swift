@@ -97,7 +97,7 @@ class MyMenuTableViewController: UITableViewController {
         
         //Present new view controller
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
-        var destViewController : UIViewController
+        var destViewController : AnyObject
         switch (indexPath.row) {
         case 0:
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("fundfestVC") as UIViewController
@@ -115,7 +115,7 @@ class MyMenuTableViewController: UITableViewController {
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("profileVC") as UIViewController
             break
         }
-        sideMenuController()?.setContentViewController(destViewController)
+        sideMenuController()?.setContentViewController(destViewController as! UIViewController)
     }
     
 

@@ -3,76 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="VCV-En-FTw">
-            <objects>
-                <viewController id="j6r-rb-8MX" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ecs-oC-q4P"/>
-                        <viewControllerLayoutGuide type="bottom" id="Eft-02-YRv"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3P1-5G-nh5">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LTD-jU-ZFa">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <animations/>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <navigationItem title="Title" id="Ej9-lj-LVG"/>
-                                </items>
-                            </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUS-uw-rFU">
-                                <rect key="frame" x="172" y="319" width="31" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Map">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q89-fh-wDu">
-                                <rect key="frame" x="156" y="426" width="56" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Projects">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pM2-2D-OmM">
-                                <rect key="frame" x="141" y="524" width="92" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Login/Logout">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fX-l3-GFY">
-                                <rect key="frame" x="152" y="217" width="64" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Schedule">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cO2-eT-hFK">
-                                <rect key="frame" x="155" y="124" width="65" height="30"/>
-                                <animations/>
-                                <state key="normal" title="FundFest">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qba-Jh-t6f" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-602" y="-668"/>
-        </scene>
-        <!--View Controller-->
+        <!--Categories-->
         <scene sceneID="MqE-ix-M6h">
             <objects>
-                <viewController id="ZBG-h2-dCX" customClass="ViewController" customModule="Indy_Fundfest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="projectsVC" title="Categories" id="ZBG-h2-dCX" customClass="CategoryViewController" customModule="Indy_Fundfest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WSC-F5-cgj"/>
                         <viewControllerLayoutGuide type="bottom" id="Ap3-YQ-OED"/>
@@ -81,28 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AKn-Xy-52i">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <animations/>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <navigationItem title="Categories" id="4zZ-Q7-h7b">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" id="bTf-cg-uqa"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cXs-OG-EsT" userLabel="scrollView">
-                                <rect key="frame" x="0.0" y="64" width="375" height="745"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cXs-OG-EsT" userLabel="scrollView">
+                                <rect key="frame" x="113" y="74" width="375" height="736"/>
                                 <subviews>
                                     <view contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bPB-9P-LjI">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="862"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="project-sm" translatesAutoresizingMaskIntoConstraints="NO" id="0dE-Nz-bkS">
                                                 <rect key="frame" x="200" y="180" width="150" height="150"/>
-                                                <animations/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="project-lg" translatesAutoresizingMaskIntoConstraints="NO" id="B8M-xc-8h8">
-                                                <rect key="frame" x="25" y="15" width="325" height="123"/>
                                                 <animations/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="project-sm" translatesAutoresizingMaskIntoConstraints="NO" id="JG1-xs-dQh">
@@ -125,7 +48,14 @@
                                                 <rect key="frame" x="164" y="146" width="46" height="30"/>
                                                 <animations/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <segue destination="sQG-f9-i3I" kind="show" identifier="ChooseProject" id="rwO-vB-Jq2"/>
+                                                </connections>
                                             </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="project-lg" translatesAutoresizingMaskIntoConstraints="NO" id="B8M-xc-8h8">
+                                                <rect key="frame" x="25" y="15" width="325" height="123"/>
+                                                <animations/>
+                                            </imageView>
                                         </subviews>
                                         <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -133,22 +63,33 @@
                                 </subviews>
                                 <animations/>
                             </scrollView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eOg-gX-w18">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="Category" id="2ts-3C-DY9"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cXs-OG-EsT" firstAttribute="leading" secondItem="DTQ-Kb-q8r" secondAttribute="leadingMargin" id="hS5-U8-Hb1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cXs-OG-EsT" secondAttribute="trailing" id="xbq-WV-0ub"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="scrollView" destination="cXs-OG-EsT" id="eKs-Hb-Bc0"/>
+                        <outlet property="scrollView" destination="cXs-OG-EsT" id="rXD-lm-nsN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Zv-9p-HwD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="-668"/>
+            <point key="canvasLocation" x="-17" y="718"/>
         </scene>
-        <!--View Controller-->
+        <!--Projects-->
         <scene sceneID="Da4-kK-LaI">
             <objects>
-                <viewController id="sQG-f9-i3I" sceneMemberID="viewController">
+                <viewController title="Projects" id="sQG-f9-i3I" customClass="ProjectViewController" customModule="Indy_Fundfest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9vB-ee-Gfc"/>
                         <viewControllerLayoutGuide type="bottom" id="tas-AE-Qmy"/>
@@ -157,13 +98,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hi there!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhE-3v-9r4">
-                                <rect key="frame" x="268" y="290" width="65" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="____" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhE-3v-9r4">
+                                <rect key="frame" x="20" y="20" width="384" height="560"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5c-4W-Yuq">
+                                <rect key="frame" x="259" y="285" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="pto-Cs-h8k" kind="show" id="ats-je-aGX"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mGQ-IL-MCn">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="Projects" id="9E2-XL-KNe"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -172,61 +128,18 @@
                             <constraint firstAttribute="centerY" secondItem="fhE-3v-9r4" secondAttribute="centerY" id="ogx-ZW-p6c"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultData" destination="fhE-3v-9r4" id="E7c-8p-dbj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ni-CZ-r3T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1395" y="718"/>
+            <point key="canvasLocation" x="704" y="718"/>
         </scene>
-        <!--ViewController 4-->
-        <scene sceneID="cB2-3g-eCP">
-            <objects>
-                <viewController storyboardIdentifier="projectsVC" title="ViewController 4" id="rpd-QJ-gKS" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="cnn-2B-YuV"/>
-                        <viewControllerLayoutGuide type="bottom" id="RK8-pd-0rp"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2xU-cb-EZc">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="projectVC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cvv-uL-sg3">
-                                <rect key="frame" x="237" y="290" width="126" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuJ-yZ-XoF">
-                                <rect key="frame" x="279" y="329" width="43" height="34"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Push">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="sQG-f9-i3I" kind="show" id="nbg-3j-tJH"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" red="0.2267350789" green="0.82260784629999995" blue="0.83163265310000001" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="cuJ-yZ-XoF" firstAttribute="top" secondItem="Cvv-uL-sg3" secondAttribute="bottom" constant="18" id="DwL-3M-IIY"/>
-                            <constraint firstAttribute="centerY" secondItem="Cvv-uL-sg3" secondAttribute="centerY" id="GoE-0p-FFE"/>
-                            <constraint firstAttribute="centerX" secondItem="Cvv-uL-sg3" secondAttribute="centerX" id="H3B-MO-bOv"/>
-                            <constraint firstAttribute="centerX" secondItem="cuJ-yZ-XoF" secondAttribute="centerX" id="r9g-3V-mJX"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="STx-a2-MRn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="685" y="716"/>
-        </scene>
-        <!--ViewController 3-->
+        <!--Map-->
         <scene sceneID="BuF-jd-lpR">
             <objects>
-                <viewController storyboardIdentifier="mapVC" title="ViewController 3" id="HPI-vp-otq" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mapVC" title="Map" id="HPI-vp-otq" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5WF-to-rLB"/>
                         <viewControllerLayoutGuide type="bottom" id="2rI-UF-ko9"/>
@@ -242,9 +155,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KSf-fY-6bU">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="Map" id="Ue0-2v-Mn6"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.1751304179" green="0.90336618430000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="eOz-zL-qsI" secondAttribute="centerX" id="TYV-SO-tgj"/>
                             <constraint firstAttribute="centerY" secondItem="eOz-zL-qsI" secondAttribute="centerY" id="nEV-Dr-hth"/>
@@ -253,7 +173,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pHz-h5-Mj5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="687" y="54"/>
+            <point key="canvasLocation" x="653" y="54"/>
         </scene>
         <!--My Navigation Controller-->
         <scene sceneID="iG1-FI-S4E">
@@ -272,7 +192,7 @@
             </objects>
             <point key="canvasLocation" x="-759" y="49"/>
         </scene>
-        <!--SwiftSideMenu-->
+        <!--FundFest-->
         <scene sceneID="5os-L3-7DK">
             <objects>
                 <viewController storyboardIdentifier="fundfestVC" id="xZT-GX-m7Q" customClass="ViewController" customModule="Indy_Fundfest" customModuleProvider="target" sceneMemberID="viewController">
@@ -286,7 +206,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="SwiftSideMenu" id="A2A-KU-DjM">
+                    <navigationItem key="navigationItem" title="FundFest" id="A2A-KU-DjM">
                         <barButtonItem key="leftBarButtonItem" title="Item" id="hvU-Ze-xfV">
                             <connections>
                                 <action selector="toggleSideMenu:" destination="xZT-GX-m7Q" id="ov8-GK-S07"/>
@@ -296,12 +216,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JAn-2v-UQz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="41" y="54"/>
+            <point key="canvasLocation" x="-6" y="54"/>
         </scene>
-        <!--ViewController 2-->
+        <!--Schedule-->
         <scene sceneID="Uai-o3-iuz">
             <objects>
-                <viewController storyboardIdentifier="scheduleVC" title="ViewController 2" id="wgv-As-Cl1" customClass="ViewController2" customModule="Indy_Fundfest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="scheduleVC" title="Schedule" id="wgv-As-Cl1" customClass="ViewController" customModule="Indy_Fundfest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HeA-jP-9UB"/>
                         <viewControllerLayoutGuide type="bottom" id="5gP-i7-abX"/>
@@ -317,9 +237,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LNV-U1-zwL">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="Schedule" id="cz6-sQ-JhW"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.1447979539" green="1" blue="0.66376489859999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="KXL-YR-bXf" secondAttribute="centerX" id="7dc-K9-Ic2"/>
                             <constraint firstAttribute="centerY" secondItem="KXL-YR-bXf" secondAttribute="centerY" id="BKM-j4-P26"/>
@@ -328,12 +255,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3w7-zQ-Jc2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="41" y="718"/>
+            <point key="canvasLocation" x="653" y="1402"/>
         </scene>
-        <!--ViewController 3-->
+        <!--My Profile-->
         <scene sceneID="131-eL-q1o">
             <objects>
-                <viewController storyboardIdentifier="profileVC" title="ViewController 3" id="lun-X8-xKa" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="profileVC" title="My Profile" id="lun-X8-xKa" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ryd-5D-OxD"/>
                         <viewControllerLayoutGuide type="bottom" id="ZqF-Br-EjW"/>
@@ -343,15 +270,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="profileVC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NL0-Nc-hlg">
-                                <rect key="frame" x="237" y="290" width="126" height="21"/>
+                                <rect key="frame" x="250" y="267" width="126" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UIR-0y-srZ">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="My Profile" id="g1C-Q3-0Ma"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.1751304179" green="0.90336618430000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="NL0-Nc-hlg" secondAttribute="centerX" id="DEV-GX-DUe"/>
                             <constraint firstAttribute="centerY" secondItem="NL0-Nc-hlg" secondAttribute="centerY" id="JLs-fS-bBy"/>
@@ -360,7 +294,49 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Wx-gN-osE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="687" y="1402"/>
+            <point key="canvasLocation" x="-6" y="1394"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="kPh-4e-n6n">
+            <objects>
+                <viewController title="Detail" id="pto-Cs-h8k" customClass="ProjectViewController" customModule="Indy_Fundfest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lgc-sl-zjP"/>
+                        <viewControllerLayoutGuide type="bottom" id="YMv-pQ-JAY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qb6-gq-cwX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Details" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDf-h9-zdv">
+                                <rect key="frame" x="20" y="20" width="384" height="560"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="06i-Qx-Vdt">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="%%ProjectName%%" id="M5B-XV-VEt"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="YDf-h9-zdv" secondAttribute="centerX" id="Pgn-ba-2uN"/>
+                            <constraint firstAttribute="centerY" secondItem="YDf-h9-zdv" secondAttribute="centerY" id="ZjE-nh-Z4I"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultData" destination="YDf-h9-zdv" id="AZP-CO-N73"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SLE-mn-6YC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1461" y="718"/>
         </scene>
     </scenes>
     <resources>

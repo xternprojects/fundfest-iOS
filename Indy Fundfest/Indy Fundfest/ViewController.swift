@@ -9,11 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController, ENSideMenuDelegate  {
-    @IBOutlet var scrollView: UIScrollView!
-    
-    override func viewDidLoad() {        
+    override func viewDidLoad() {
         super.viewDidLoad()
-      //  scrollView.contentSize.height = 1000 // change programmatically
+        //scrollView.frame = CGRectMake(0, 0, 350, 1000);
+        //scrollView.content.size = CGSizeMake(350, 1000);
+      
         // Do any additional setup after loading the view, typically from a nib.
     }
 

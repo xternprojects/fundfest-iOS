@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C01FD4F1B52E41900D137F3 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C01FD4E1B52E41900D137F3 /* ProjectViewController.swift */; };
+		8C01FD511B52F02600D137F3 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C01FD501B52F02600D137F3 /* CategoryViewController.swift */; };
 		8CED5DA71B50AFE700D8E329 /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CED5DA61B50AFE700D8E329 /* ENSideMenu.swift */; };
 		8CED5DA91B50AFF300D8E329 /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CED5DA81B50AFF300D8E329 /* ENSideMenuNavigationController.swift */; };
 		8CED5DAB1B50B03300D8E329 /* SliderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CED5DAA1B50B03300D8E329 /* SliderVC.swift */; };
@@ -31,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C01FD4E1B52E41900D137F3 /* ProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
+		8C01FD501B52F02600D137F3 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		8CED5DA61B50AFE700D8E329 /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenu.swift; sourceTree = "<group>"; };
 		8CED5DA81B50AFF300D8E329 /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
 		8CED5DAA1B50B03300D8E329 /* SliderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderVC.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				8CED5DB01B50B10A00D8E329 /* Library */,
 				8CFAB18E1B44C6B8009C0EF2 /* AppDelegate.swift */,
 				8CFAB1901B44C6B8009C0EF2 /* ViewController.swift */,
+				8C01FD4E1B52E41900D137F3 /* ProjectViewController.swift */,
+				8C01FD501B52F02600D137F3 /* CategoryViewController.swift */,
 				8CFAB1941B44C6B8009C0EF2 /* Main.storyboard */,
 				8CFAB1971B44C6B8009C0EF2 /* Images.xcassets */,
 				8CFAB1991B44C6B8009C0EF2 /* LaunchScreen.xib */,
@@ -237,10 +243,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C01FD511B52F02600D137F3 /* CategoryViewController.swift in Sources */,
 				8CED5DAB1B50B03300D8E329 /* SliderVC.swift in Sources */,
 				8CED5DA91B50AFF300D8E329 /* ENSideMenuNavigationController.swift in Sources */,
 				8CED5DA71B50AFE700D8E329 /* ENSideMenu.swift in Sources */,
 				8CED5DAE1B50B0DB00D8E329 /* MyNavigationController.swift in Sources */,
+				8C01FD4F1B52E41900D137F3 /* ProjectViewController.swift in Sources */,
 				8CED5DAF1B50B0DB00D8E329 /* MyMenuTableViewController.swift in Sources */,
 				8CFAB18F1B44C6B8009C0EF2 /* AppDelegate.swift in Sources */,
 				8CFAB1911B44C6B8009C0EF2 /* ViewController.swift in Sources */,
