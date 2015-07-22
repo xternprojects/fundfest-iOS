@@ -9,27 +9,23 @@
 import UIKit
 
 class CategoryViewController: UIViewController {
-    
     @IBOutlet var scrollView: UIScrollView!
+   
     let url = NSURL(string: "https://fundfest-backend.herokuapp.com/projects")
     var jsonData = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-       scrollView.contentSize.height = 1000
-        // Do any additional setup after loading the view.
-        
+        scrollView.contentSize.height = 1000
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!) { (data, response, error) in NSString(data: data!, encoding: NSUTF8StringEncoding)
             if error != "nil" {
                 self.jsonData = String(NSString(data: data!, encoding: NSUTF8StringEncoding)!)
-                print(self.jsonData)
+                //print(self.jsonData)
             }
             else
             {
                 print(error)
             }
-            
         }
         task.resume()
     }
@@ -43,46 +39,33 @@ class CategoryViewController: UIViewController {
         if segue.identifier == "ShowTech"
         {
             if let destinationVC = segue.destinationViewController as? ProjectViewController{
-                destinationVC.segueData = "Showing Tech"
+                // destinationVC.segueData = "Showing Tech"
             }
         } else if segue.identifier == "ShowSocial"
         {
             if let destinationVC = segue.destinationViewController as? ProjectViewController{
-                destinationVC.segueData = "Showing Social"
+               // destinationVC.segueData = "Showing Social"
             }
         } else if segue.identifier == "ShowArt"
         {
             if let destinationVC = segue.destinationViewController as? ProjectViewController{
-                destinationVC.segueData = "Art"
+               /// destinationVC.segueData = "Art"
             }
         } else if segue.identifier == "ShowEducation"
         {
             if let destinationVC = segue.destinationViewController as? ProjectViewController{
-                destinationVC.segueData = "Showing Education"
+              //  destinationVC.segueData = "Showing Education"
             }
         } else if segue.identifier == "ShowMisc"
         {
             if let destinationVC = segue.destinationViewController as? ProjectViewController{
-                destinationVC.segueData = "Showing Misc"
+              //  destinationVC.segueData = "Showing Misc"
             }
         } else if segue.identifier == "ShowFood"
         {
             if let destinationVC = segue.destinationViewController as? ProjectViewController{
-                destinationVC.segueData = "Showing Food"
+              //  destinationVC.segueData = "Showing Food"
             }
         }
-        
     }
-
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

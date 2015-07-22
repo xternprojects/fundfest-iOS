@@ -73,10 +73,7 @@ class MyMenuTableViewController: UITableViewController {
             cell!.textLabel!.text = "Profile"
             break
         }
-
-        
        // cell!.textLabel?.text = "ViewController #\(indexPath.row+1)"
-        
         return cell!
     }
     
@@ -86,14 +83,12 @@ class MyMenuTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        print("Selected row: \(indexPath.row)")
-        
+        //print("Selected row: \(indexPath.row)")
         if (indexPath.row == selectedMenuItem) {
             return
         }
         
         selectedMenuItem = indexPath.row
-        
         //Present new view controller
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
         var destViewController : AnyObject

@@ -13,7 +13,6 @@ class ViewController: UIViewController, ENSideMenuDelegate  {
         super.viewDidLoad()
         //scrollView.frame = CGRectMake(0, 0, 350, 1000);
         //scrollView.content.size = CGSizeMake(350, 1000);
-      
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -29,11 +28,9 @@ class ViewController: UIViewController, ENSideMenuDelegate  {
     func sideMenuWillOpen() {
         print("sideMenuWillOpen")
     }
-    
     func sideMenuWillClose() {
         print("sideMenuWillClose")
     }
-    
     func sideMenuShouldOpenSideMenu() -> Bool {
         print("sideMenuShouldOpenSideMenu")
         return true

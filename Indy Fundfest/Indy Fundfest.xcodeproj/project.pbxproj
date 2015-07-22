@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		8C01FD4F1B52E41900D137F3 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C01FD4E1B52E41900D137F3 /* ProjectViewController.swift */; };
 		8C01FD511B52F02600D137F3 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C01FD501B52F02600D137F3 /* CategoryViewController.swift */; };
+		8C3CF4F81B5F3EB500F80FB7 /* IssueDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3CF4F71B5F3EB500F80FB7 /* IssueDetailViewController.swift */; };
+		8C94888C1B5F26520054DB47 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C94888B1B5F26520054DB47 /* CustomTableViewCell.xib */; };
+		8C94888E1B5F311A0054DB47 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C94888D1B5F311A0054DB47 /* SwiftyJSON.swift */; };
+		8C9488901B5F315F0054DB47 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C94888F1B5F315F0054DB47 /* APICall.swift */; };
 		8CED5DA71B50AFE700D8E329 /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CED5DA61B50AFE700D8E329 /* ENSideMenu.swift */; };
 		8CED5DA91B50AFF300D8E329 /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CED5DA81B50AFF300D8E329 /* ENSideMenuNavigationController.swift */; };
 		8CED5DAE1B50B0DB00D8E329 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CED5DAC1B50B0DB00D8E329 /* MyNavigationController.swift */; };
@@ -34,6 +38,10 @@
 /* Begin PBXFileReference section */
 		8C01FD4E1B52E41900D137F3 /* ProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
 		8C01FD501B52F02600D137F3 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		8C3CF4F71B5F3EB500F80FB7 /* IssueDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IssueDetailViewController.swift; path = ../IssueDetailViewController.swift; sourceTree = "<group>"; };
+		8C94888B1B5F26520054DB47 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		8C94888D1B5F311A0054DB47 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		8C94888F1B5F315F0054DB47 /* APICall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
 		8CED5DA61B50AFE700D8E329 /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenu.swift; sourceTree = "<group>"; };
 		8CED5DA81B50AFF300D8E329 /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
 		8CED5DAC1B50B0DB00D8E329 /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
@@ -68,6 +76,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C3CF4F91B5F4F2500F80FB7 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8C94888D1B5F311A0054DB47 /* SwiftyJSON.swift */,
+				8C94888F1B5F315F0054DB47 /* APICall.swift */,
+				8C3CF4F71B5F3EB500F80FB7 /* IssueDetailViewController.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
 		8CED5DB01B50B10A00D8E329 /* Library */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +118,7 @@
 		8CFAB18B1B44C6B8009C0EF2 /* Indy Fundfest */ = {
 			isa = PBXGroup;
 			children = (
+				8C3CF4F91B5F4F2500F80FB7 /* API */,
 				8CED5DB01B50B10A00D8E329 /* Library */,
 				8CFAB18E1B44C6B8009C0EF2 /* AppDelegate.swift */,
 				8CFAB1901B44C6B8009C0EF2 /* ViewController.swift */,
@@ -108,6 +127,7 @@
 				8CFAB1941B44C6B8009C0EF2 /* Main.storyboard */,
 				8CFAB1971B44C6B8009C0EF2 /* Images.xcassets */,
 				8CFAB1991B44C6B8009C0EF2 /* LaunchScreen.xib */,
+				8C94888B1B5F26520054DB47 /* CustomTableViewCell.xib */,
 				8CFAB18C1B44C6B8009C0EF2 /* Supporting Files */,
 			);
 			path = "Indy Fundfest";
@@ -222,6 +242,7 @@
 			files = (
 				8CFAB1961B44C6B8009C0EF2 /* Main.storyboard in Resources */,
 				8CFAB19B1B44C6B8009C0EF2 /* LaunchScreen.xib in Resources */,
+				8C94888C1B5F26520054DB47 /* CustomTableViewCell.xib in Resources */,
 				8CFAB1981B44C6B8009C0EF2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,11 +263,14 @@
 			files = (
 				8C01FD511B52F02600D137F3 /* CategoryViewController.swift in Sources */,
 				8CED5DA91B50AFF300D8E329 /* ENSideMenuNavigationController.swift in Sources */,
+				8C3CF4F81B5F3EB500F80FB7 /* IssueDetailViewController.swift in Sources */,
 				8CED5DA71B50AFE700D8E329 /* ENSideMenu.swift in Sources */,
 				8CED5DAE1B50B0DB00D8E329 /* MyNavigationController.swift in Sources */,
 				8C01FD4F1B52E41900D137F3 /* ProjectViewController.swift in Sources */,
 				8CED5DAF1B50B0DB00D8E329 /* MyMenuTableViewController.swift in Sources */,
+				8C94888E1B5F311A0054DB47 /* SwiftyJSON.swift in Sources */,
 				8CFAB18F1B44C6B8009C0EF2 /* AppDelegate.swift in Sources */,
+				8C9488901B5F315F0054DB47 /* APICall.swift in Sources */,
 				8CFAB1911B44C6B8009C0EF2 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
