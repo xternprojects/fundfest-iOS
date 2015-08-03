@@ -15,6 +15,8 @@
 		8C9488901B5F315F0054DB47 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C94888F1B5F315F0054DB47 /* APICall.swift */; };
 		8CB165B81B6EE3F1001904B5 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB165B61B6EE3F1001904B5 /* TableViewCell.swift */; };
 		8CB165B91B6EE3F1001904B5 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB165B71B6EE3F1001904B5 /* TableViewController.swift */; };
+		8CB165BB1B6EEA2D001904B5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB165BA1B6EEA2D001904B5 /* MapViewController.swift */; };
+		8CB165BD1B6EEC06001904B5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB165BC1B6EEC06001904B5 /* MapKit.framework */; };
 		8CED5DA71B50AFE700D8E329 /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CED5DA61B50AFE700D8E329 /* ENSideMenu.swift */; };
 		8CED5DA91B50AFF300D8E329 /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CED5DA81B50AFF300D8E329 /* ENSideMenuNavigationController.swift */; };
 		8CED5DAE1B50B0DB00D8E329 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CED5DAC1B50B0DB00D8E329 /* MyNavigationController.swift */; };
@@ -46,6 +48,8 @@
 		8C94888F1B5F315F0054DB47 /* APICall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
 		8CB165B61B6EE3F1001904B5 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		8CB165B71B6EE3F1001904B5 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		8CB165BA1B6EEA2D001904B5 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		8CB165BC1B6EEC06001904B5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		8CED5DA61B50AFE700D8E329 /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenu.swift; sourceTree = "<group>"; };
 		8CED5DA81B50AFF300D8E329 /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
 		8CED5DAC1B50B0DB00D8E329 /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
@@ -67,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CB165BD1B6EEC06001904B5 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +109,7 @@
 		8CFAB1801B44C6B8009C0EF2 = {
 			isa = PBXGroup;
 			children = (
+				8CB165BC1B6EEC06001904B5 /* MapKit.framework */,
 				8CFAB18B1B44C6B8009C0EF2 /* Indy Fundfest */,
 				8CFAB1A31B44C6B8009C0EF2 /* Indy FundfestTests */,
 				8CFAB18A1B44C6B8009C0EF2 /* Products */,
@@ -127,6 +133,7 @@
 				8CFAB18E1B44C6B8009C0EF2 /* AppDelegate.swift */,
 				8CFAB1901B44C6B8009C0EF2 /* ViewController.swift */,
 				8C01FD4E1B52E41900D137F3 /* ProjectViewController.swift */,
+				8CB165BA1B6EEA2D001904B5 /* MapViewController.swift */,
 				8C01FD501B52F02600D137F3 /* CategoryViewController.swift */,
 				8CB165B61B6EE3F1001904B5 /* TableViewCell.swift */,
 				8CB165B71B6EE3F1001904B5 /* TableViewController.swift */,
@@ -280,6 +287,7 @@
 				8CB165B81B6EE3F1001904B5 /* TableViewCell.swift in Sources */,
 				8C9488901B5F315F0054DB47 /* APICall.swift in Sources */,
 				8CFAB1911B44C6B8009C0EF2 /* ViewController.swift in Sources */,
+				8CB165BB1B6EEA2D001904B5 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

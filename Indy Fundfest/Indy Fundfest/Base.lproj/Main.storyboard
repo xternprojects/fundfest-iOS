@@ -226,7 +226,7 @@
         <!--Map-->
         <scene sceneID="BuF-jd-lpR">
             <objects>
-                <viewController storyboardIdentifier="mapVC" title="Map" id="HPI-vp-otq" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mapVC" title="Map" id="HPI-vp-otq" customClass="MapViewController" customModule="Indy_Fundfest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5WF-to-rLB"/>
                         <viewControllerLayoutGuide type="bottom" id="2rI-UF-ko9"/>
@@ -242,17 +242,21 @@
                                     <navigationItem title="Map" id="Ue0-2v-Mn6"/>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="%% Map %%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOz-zL-qsI">
-                                <rect key="frame" x="63" y="272" width="251" height="56"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kv0-Bl-g25">
+                                <rect key="frame" x="16" y="85" width="350" height="378"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </mapView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="kv0-Bl-g25" secondAttribute="centerX" id="Ufj-oz-6Hb"/>
+                            <constraint firstAttribute="centerY" secondItem="kv0-Bl-g25" secondAttribute="centerY" id="efq-HL-RD1"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="map" destination="kv0-Bl-g25" id="hLe-E3-24b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pHz-h5-Mj5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -416,7 +420,7 @@
                                 <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="XxQ-Ue-ZMt">
-                                <rect key="frame" x="178" y="227" width="242" height="40"/>
+                                <rect key="frame" x="178" y="274" width="242" height="40"/>
                                 <animations/>
                             </imageView>
                         </subviews>
