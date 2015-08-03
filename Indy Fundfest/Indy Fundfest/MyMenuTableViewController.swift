@@ -14,7 +14,7 @@ class MyMenuTableViewController: UITableViewController {
         super.viewDidLoad()
         
         // Customize apperance of table view
-        tableView.contentInset = UIEdgeInsetsMake(64.0, 0, 0, 0) //
+        tableView.contentInset = UIEdgeInsetsMake(64.0, 0, 0, 0)
         tableView.separatorStyle = .None
         tableView.backgroundColor = UIColor.clearColor()
         tableView.scrollsToTop = false
@@ -47,15 +47,15 @@ class MyMenuTableViewController: UITableViewController {
         
         if (cell == nil) {
             cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "CELL")
+            cell!.frame.size.width = 500
+//            println(cell!.frame.size.width)
             cell!.backgroundColor = UIColor.clearColor()
             cell!.textLabel?.textColor = UIColor.darkGrayColor()
             let selectedBackgroundView = UIView(frame: CGRectMake(0, 0, cell!.frame.size.width, cell!.frame.size.height))
             selectedBackgroundView.backgroundColor = UIColor.grayColor().colorWithAlphaComponent(0.2)
             cell!.selectedBackgroundView = selectedBackgroundView
         }
-        
-        print(indexPath.row+1)
-        
+
         switch (indexPath.row) {
         case 0:
             cell!.textLabel!.text = "Fund Fest"
@@ -81,9 +81,10 @@ class MyMenuTableViewController: UITableViewController {
         return 60.0
     }
     
+    
+    
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-        //print("Selected row: \(indexPath.row)")
+
         if (indexPath.row == selectedMenuItem) {
             return
         }

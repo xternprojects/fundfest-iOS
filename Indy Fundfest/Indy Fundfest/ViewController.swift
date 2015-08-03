@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController, ENSideMenuDelegate  {
     override func viewDidLoad() {
@@ -35,7 +36,5 @@ class ViewController: UIViewController, ENSideMenuDelegate  {
         print("sideMenuShouldOpenSideMenu")
         return true
     }
-
-
 }
 

@@ -9,14 +9,14 @@
 import UIKit
 
 class CategoryViewController: UIViewController {
-    @IBOutlet var scrollView: UIScrollView!
+    //@IBOutlet var scrollView: UIScrollView!
    
     let url = NSURL(string: "https://fundfest-backend.herokuapp.com/projects")
     var jsonData = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrollView.contentSize.height = 1000
+       // scrollView.contentSize.height = 1000
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!) { (data, response, error) in NSString(data: data!, encoding: NSUTF8StringEncoding)
             if error != "nil" {
                 self.jsonData = String(NSString(data: data!, encoding: NSUTF8StringEncoding)!)
