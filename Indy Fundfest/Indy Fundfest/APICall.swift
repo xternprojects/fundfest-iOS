@@ -12,7 +12,7 @@ typealias ServiceResponse = (JSON, NSError?) -> Void
 class APICall: NSObject {
     
     static let sharedInstance = APICall()
-    let url = "http://culturaltrail.herokuapp.com/issues"
+    let url = "http://fundfest-backend.herokuapp.com/projects"
     
     func getProjects(onCompletion: (JSON) -> Void) {
         let api = url
