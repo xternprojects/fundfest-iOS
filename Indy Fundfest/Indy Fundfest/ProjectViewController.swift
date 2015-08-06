@@ -51,7 +51,7 @@ class  ProjectViewController: UIViewController, UITableViewDataSource, UITableVi
             for (index: String, subJson: JSON) in results {
                 let issue: AnyObject = subJson.object
                 self.items.addObject(issue)
-                self.retrieveImage(issue["picture"] as! String)
+                //self.retrieveImage(issue["picture"] as! String)
             }
             dispatch_async(dispatch_get_main_queue(),{
                 self.tableView?.reloadData()
@@ -97,16 +97,16 @@ class  ProjectViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell:CustomTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("customCell") as! CustomTableViewCell
         let issue:JSON = JSON(self.items[indexPath.row])
-        let picURL = issue["picture"].string
+        let picURL = "" // issue["picture"].string
         var issueImage = UIImageView();
-        let url = NSURL(string: picURL!)
-        if(url != nil)
+        let url = NSURL(string: picURL) // NSURL(string: picURL!)
+        if(url != NSURL(string: "")) // if(url != nil)
         {
             issueImage = self.imageArray[indexPath.row] as! UIImageView
             cell.loadItemWithImage(title: issue["name"].string!, description: issue["description"].string!, image: issueImage.image!, location: issue["description"].string!)
         }
         else {
-            cell.loadItem(title: issue["name"].string!, description: issue["description"].string!, location: issue["description"].string!)
+            cell.loadItem(title: issue["projectName"].string!, description: issue["projectDescription"].string!, location: issue["projectDescription"].string!)
         }
         return cell
     }
