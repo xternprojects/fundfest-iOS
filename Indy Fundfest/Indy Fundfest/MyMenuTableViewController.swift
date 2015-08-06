@@ -39,7 +39,7 @@ class MyMenuTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
-        return 5
+        return 6
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -48,25 +48,37 @@ class MyMenuTableViewController: UITableViewController {
         if (cell == nil) {
             cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "CELL")
             cell!.frame.size.width = 500
-//            println(cell!.frame.size.width)
             cell!.backgroundColor = UIColor.clearColor()
             cell!.textLabel?.textColor = UIColor.darkGrayColor()
             let selectedBackgroundView = UIView(frame: CGRectMake(0, 0, cell!.frame.size.width, cell!.frame.size.height))
             selectedBackgroundView.backgroundColor = UIColor.grayColor().colorWithAlphaComponent(0.2)
             cell!.selectedBackgroundView = selectedBackgroundView
         }
-
+        
+//        if (profileCell == nil) {
+//            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "CELL")
+//            cell!.frame.size.width = 500
+//            cell!.backgroundColor = UIColor.clearColor()
+//            cell!.textLabel?.textColor = UIColor.darkGrayColor()
+//            let selectedBackgroundView = UIView(frame: CGRectMake(0, 0, cell!.frame.size.width, cell!.frame.size.height))
+//            selectedBackgroundView.backgroundColor = UIColor.grayColor().colorWithAlphaComponent(0.2)
+//            cell!.selectedBackgroundView = selectedBackgroundView
+//        }
+        
         switch (indexPath.row) {
         case 0:
-            cell!.textLabel!.text = "Fund Fest"
+            cell!.textLabel!.text = "==Profile=="
             break
         case 1:
-            cell!.textLabel!.text = "Schedule"
+            cell!.textLabel!.text = "Fund Fest"
             break
         case 2:
-            cell!.textLabel!.text = "Map"
+            cell!.textLabel!.text = "Schedule"
             break
         case 3:
+            cell!.textLabel!.text = "Map"
+            break
+        case 4:
             cell!.textLabel!.text = "Projects"
             break
         default:
@@ -95,15 +107,18 @@ class MyMenuTableViewController: UITableViewController {
         var destViewController : AnyObject
         switch (indexPath.row) {
         case 0:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("fundfestVC") as! UIViewController
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("profileVC") as! UIViewController
             break
         case 1:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("scheduleVC") as! UIViewController
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("fundfestVC") as! UIViewController
             break
         case 2:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("mapVC") as! UIViewController
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("scheduleVC") as! UIViewController
             break
         case 3:
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("mapVC") as! UIViewController
+            break
+        case 4:
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("projectsVC") as! UIViewController
             break
         default:

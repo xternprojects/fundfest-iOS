@@ -90,7 +90,6 @@
 			children = (
 				8C94888D1B5F311A0054DB47 /* SwiftyJSON.swift */,
 				8C94888F1B5F315F0054DB47 /* APICall.swift */,
-				8C3CF4F71B5F3EB500F80FB7 /* IssueDetailViewController.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -135,6 +134,7 @@
 				8C01FD4E1B52E41900D137F3 /* ProjectViewController.swift */,
 				8CB165BA1B6EEA2D001904B5 /* MapViewController.swift */,
 				8C01FD501B52F02600D137F3 /* CategoryViewController.swift */,
+				8C3CF4F71B5F3EB500F80FB7 /* IssueDetailViewController.swift */,
 				8CB165B61B6EE3F1001904B5 /* TableViewCell.swift */,
 				8CB165B71B6EE3F1001904B5 /* TableViewController.swift */,
 				8CFAB1941B44C6B8009C0EF2 /* Main.storyboard */,
