@@ -113,8 +113,8 @@ class  ProjectViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        issueNameToPass = self.items[indexPath.row]["name"] as! String
-        issueDescriptionToPass = self.items[indexPath.row]["description"] as! String
+        issueNameToPass = self.items[indexPath.row]["projectName"] as! String
+        issueDescriptionToPass = self.items[indexPath.row]["projectDescription"] as! String
         performSegueWithIdentifier("showIssueDetail", sender: self)
     }
 

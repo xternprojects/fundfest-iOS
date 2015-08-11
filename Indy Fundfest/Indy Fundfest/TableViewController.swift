@@ -25,7 +25,7 @@ class TableViewController: UITableViewController {
     
     func getContactListJSON(){
         sleep(1)
-        let urlString = "http://jsonplaceholder.typicode.com/users"
+        let urlString = "http://jsonplaceholder.typicode.com/albums"
         let urlEncodedString = urlString.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)
         let url = NSURL( string: urlEncodedString!)
         var task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, innerError) in
@@ -36,8 +36,8 @@ class TableViewController: UITableViewController {
                 for contacts in contactsArray
                 {
                     let id = contacts["id"].stringValue
-                    let name = contacts["name"].stringValue
-                    println( "id: \(id) name: \(name)" )
+                    let name = contacts["title"].stringValue
+                 //   println( "id: \(id) name: \(name)" )
                     self.tableName.append(name)
                     self.tableID.append(id)
                 }
