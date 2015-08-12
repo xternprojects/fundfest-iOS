@@ -369,7 +369,7 @@
         <!--My Profile-->
         <scene sceneID="131-eL-q1o">
             <objects>
-                <viewController storyboardIdentifier="profileVC" title="My Profile" id="lun-X8-xKa" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="profileVC" title="My Profile" id="lun-X8-xKa" customClass="ProfileViewController" customModule="Indy_Fundfest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ryd-5D-OxD"/>
                         <viewControllerLayoutGuide type="bottom" id="ZqF-Br-EjW"/>
@@ -391,31 +391,37 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="twitter" translatesAutoresizingMaskIntoConstraints="NO" id="bCH-4y-2bL">
-                                <rect key="frame" x="75" y="409" width="223" height="65"/>
+                                <rect key="frame" x="76" y="375" width="223" height="65"/>
                                 <animations/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qpu-MT-iNG">
-                                <rect key="frame" x="75" y="482" width="223" height="57"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign-up" translatesAutoresizingMaskIntoConstraints="NO" id="qpu-MT-iNG">
+                                <rect key="frame" x="76" y="448" width="223" height="50"/>
                                 <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="XxQ-Ue-ZMt">
-                                <rect key="frame" x="75" y="356" width="223" height="52"/>
+                                <rect key="frame" x="76" y="322" width="223" height="52"/>
                                 <animations/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwB-Mq-IYp">
-                                <rect key="frame" x="0.0" y="585" width="375" height="82"/>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UIR-0y-srZ">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="My Profile" id="g1C-Q3-0Ma">
+                                        <barButtonItem key="leftBarButtonItem" title="Menu" id="N5Z-wn-tgd">
+                                            <connections>
+                                                <action selector="toggleSideMenu:" destination="lun-X8-xKa" id="4tD-kx-4Uh"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwB-Mq-IYp">
+                                <rect key="frame" x="0.0" y="541" width="375" height="82"/>
                                 <color key="backgroundColor" red="0.1529411765" green="0.71372549019999998" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UIR-0y-srZ">
-                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <animations/>
-                                <items>
-                                    <navigationItem title="My Profile" id="g1C-Q3-0Ma"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -424,11 +430,20 @@
                             <constraint firstAttribute="centerX" secondItem="OZ9-wL-iAN" secondAttribute="centerX" id="kAX-P8-CGT"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="OZ9-wL-iAN" id="WMk-dm-BGt"/>
+                        <outlet property="facebookLoginBtn" destination="XxQ-Ue-ZMt" id="klW-Dw-s9Z"/>
+                        <outlet property="passwordTextField" destination="DFg-3U-vQK" id="GTb-EY-Rcu"/>
+                        <outlet property="signUpBtn" destination="qpu-MT-iNG" id="W6B-J5-FVu"/>
+                        <outlet property="twitterLoginBtn" destination="bCH-4y-2bL" id="Urb-RR-Db3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Wx-gN-osE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-0.5" y="1479.5"/>
+            <point key="canvasLocation" x="-0.5" y="1493.5"/>
         </scene>
         <!--Detail-->
         <scene sceneID="kPh-4e-n6n">
@@ -514,6 +529,7 @@
         <image name="art" width="336" height="125"/>
         <image name="facebook" width="155" height="33"/>
         <image name="food" width="160" height="150"/>
+        <image name="sign-up" width="300" height="135"/>
         <image name="social-good" width="160" height="150"/>
         <image name="tech" width="336" height="125"/>
         <image name="twitter" width="155" height="33"/>
